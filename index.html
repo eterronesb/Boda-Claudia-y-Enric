@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boda Claudia & Enric</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Selector idioma -->
+  <header class="topbar">
+    <div class="language-switcher">
+      <button id="lang-es">ES</button>
+      <button id="lang-ca">CAT</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <p class="subtitle" data-i18n="heroSubtitle">
+        Nos casamos
+      </p>
+
+      <h1 data-i18n="heroNames">
+        Claudia<br>
+        & Enric
+      </h1>
+      
+
+      <p class="date" data-i18n="heroDate">
+        10 de octubre de 2026
+      </p>
+
+      <a href="#info" class="btn" data-i18n="heroButton">
+        Ver invitación
+      </a>
+    </div>
+  </section>
+
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section">
+        <p class="countdown-label" data-i18n="countdownLabel">
+        Faltan
+        </p>
+
+        <div class="countdown" id="countdown">
+            <div>
+                <span id="days">00</span>
+                <small data-i18n="days">días</small>
+            </div>
+
+            <div>
+                <span id="hours">00</span>
+                <small data-i18n="hours">horas</small>
+            </div>
+
+            <div>
+                <span id="minutes">00</span>
+                <small data-i18n="minutes">minutos</small>
+            </div>
+
+            <div>
+                <span id="seconds">00</span>
+                <small data-i18n="seconds">segundos</small>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- EVENT -->
+  <section id="info" class="section">
+    <div class="event-grid">
+        <div class="event-card">
+            <h3 data-i18n="eventDateTitle">Fecha</h3>
+            <p data-i18n="eventDateText">10 de octubre de 2026</p>
+        </div>
+
+        <div class="event-card">
+            <h3 data-i18n="eventTimeTitle">Hora</h3>
+            <p data-i18n="eventTimeText">18:00</p>
+        </div>
+
+        <div class="event-card">
+            <h3 data-i18n="eventPlaceTitle">Lugar</h3>
+            <p data-i18n="eventPlaceText">Molí Vell de Benifayó</p>
+        </div>
+
+        <div class="event-card">
+            <h3 data-i18n="eventDressTitle">Dress code</h3>
+            <p data-i18n="eventDressText">Formal/Cocktail</p>
+        </div>
+    </div>
+  </section>
+
+  <section class="venue-frame reveal">
+    <div class="venue-photo"></div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section timeline-section">
+    <h2 data-i18n="timelineTitle">
+      Horarios
+    </h2>
+
+    <div class="timeline-vertical">
+
+    <div class="timeline-event left">
+      <div class="timeline-dot"></div>
+      <h3 data-i18n="ceremonyTitle">Ceremonia</h3>
+      <p>18:00</p>
+    </div>
+
+    <div class="timeline-event right">
+      <div class="timeline-dot"></div>
+      <h3 data-i18n="cocktailTitle">Banquete tipo Cóctel</h3>
+      <p>19:00</p>
+    </div>
+
+    <div class="timeline-event left">
+      <div class="timeline-dot"></div>
+      <h3 data-i18n="banquetTitle">Fiesta</h3>
+      <p>21:30</p>
+    </div>
+
+    <div class="timeline-event right">
+      <div class="timeline-dot"></div>
+      <h3 data-i18n="partyTitle">Despedida</h3>
+      <p>01:00</p>
+    </div>
+
+    </div>
+
+    <!-- <div class="timeline">
+      <div class="timeline-item">
+        <h3 data-i18n="ceremonyTitle">Ceremonia</h3>
+        <p>18:00</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3 data-i18n="cocktailTitle">Banquete tipo cocktail</h3>
+        <p>19:00</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3 data-i18n="banquetTitle">Fiesta</h3>
+        <p>21:00</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3 data-i18n="partyTitle">Despedida</h3>
+        <p>00:00</p>
+      </div>
+    </div> -->
+  </section>
+
+
+  <!-- FAQ-->
+   <section class="section faq-section reveal">
+        <h2 data-i18n="faqTitle">Preguntas frecuentes</h2>
+
+        <div class="faq-list">
+            <details>
+                <summary data-i18n="faq1Question">¿Dónde es la boda?</summary>
+                <p data-i18n="faq1Answer">En el Molí Vell de Benifayó.</p>
+            </details>
+
+            <details>
+                <summary data-i18n="faq2Question">¿A qué hora empieza?</summary>
+                <p data-i18n="faq2Answer">La ceremonia empezará a las 18:00.</p>
+            </details>
+
+            <details>
+                <summary data-i18n="faq3Question">¿Cuál es el dress code?</summary>
+                <p data-i18n="faq3Answer">Formal/Cocktail.</p>
+            </details>
+
+            <details>
+                <summary data-i18n="faq4Question">¿Cómo confirmo asistencia?</summary>
+                <p data-i18n="faq4Answer">A través del formulario que encontrarás al final de esta página.</p>
+            </details>
+        </div>
+    </section>
+
+  <!-- RSVP -->
+    <section class="section rsvp">
+        <h2 data-i18n="rsvpTitle">Confirmación de asistencia</h2>
+
+        <p data-i18n="rsvpText">
+            Por favor, confirma tu asistencia rellenando nuestro formulario.
+        </p>
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSer8Ixt_vXZJpdvYslXA9HLpH9OUXP4eOo5dicDz1FC6KlyKA/viewform?usp=publish-editor"
+            target="_blank"
+            class="btn"
+            data-i18n="rsvpButton"
+        >
+        Confirmar asistencia
+        </a>
+    </section>
+
+    <section class="gift-section reveal">
+      <h2 data-i18n="giftTitle">NUESTRO MEJOR REGALO ES DISFRUTAR CON VOSOTROS</h2>
+
+      <p data-i18n="giftText">
+        Tu presencia es el mejor regalo, pero si quieres tener un detalle con nosotros, ponemos a disposicion este numero de cuenta.
+      </p>
+
+      <div class="iban-box">
+        <span id="iban">ES29 1465 0100 9617 7450 8824</span>
+        <button id="copy-iban" data-i18n="copyButton">
+            Copiar
+        </button>
+      </div>
+      <p data-i18n="giftNote">
+        ¡Muchas gracias por adelantado!
+      </p>
+    </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p data-i18n="footerText">
+      Gracias por formar parte de nuestra historia
+    </p>
+  </footer>
+
+  <script src="js/translation.js"></script>
+</body>
+</html>
