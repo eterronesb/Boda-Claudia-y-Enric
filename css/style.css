@@ -575,3 +575,13 @@ footer {
     margin: 0;
   }
 }
+
+@media (max-width: 768px) {
+  #iban {
+    display: block;
+    white-space: nowrap;
+    font-size: clamp(0.95rem, 3.8vw, 1.3rem);
+    letter-spacing: 1px;
+    overflow-x: auto;
+  }
+}
