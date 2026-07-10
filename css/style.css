@@ -531,42 +531,44 @@ footer {
     position: relative;
     width: 100%;
     max-width: 100%;
+    margin: 2rem auto 0;
     padding: 2rem 1.5rem 2rem 4rem;
+    box-sizing: border-box;
   }
 
-  /* Línea vertical a la izquierda */
   .timeline-vertical::before {
     left: 2rem;
     transform: none;
   }
 
-  /* Todos los eventos al mismo lado */
   .timeline-event,
   .timeline-event.left,
   .timeline-event.right {
+    left: 0;
     width: 100%;
-    min-height: auto;
-    margin: 0 0 3rem;
-    padding: 0 0 0 1.5rem;
+    padding: 2rem 0 2rem 1.5rem;
     text-align: left;
+    box-sizing: border-box;
   }
 
-  /* Punto sobre la línea */
-  .timeline-dot {
-    left: 2rem;
+  .timeline-event.left .timeline-dot,
+  .timeline-event.right .timeline-dot {
+    left: -2.5rem;
     right: auto;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   .timeline-event h3 {
     font-size: clamp(2rem, 10vw, 3rem);
     line-height: 1.05;
-    margin: 0 0 0.6rem;
+    margin: 0 0 0.5rem;
+    overflow-wrap: anywhere;
   }
 
   .timeline-event p {
     font-size: 1rem;
-    letter-spacing: 0.25rem;
+    letter-spacing: 4px;
     margin: 0;
   }
 }
