@@ -528,50 +528,43 @@ footer {
 
 @media (max-width: 768px) {
   .timeline-vertical {
+    position: relative;
     width: 100%;
     max-width: 100%;
-    padding: 2rem 1.5rem 2rem 3.5rem;
+    padding: 2rem 1.5rem 2rem 4rem;
   }
 
+  /* Línea vertical a la izquierda */
   .timeline-vertical::before {
-    left: 1.6rem;
+    left: 2rem;
     transform: none;
   }
 
-  .timeline-item {
-    display: block;
+  /* Todos los eventos al mismo lado */
+  .timeline-event,
+  .timeline-event.left,
+  .timeline-event.right {
     width: 100%;
     min-height: auto;
-    margin-bottom: 3rem;
-    padding-left: 1.5rem;
+    margin: 0 0 3rem;
+    padding: 0 0 0 1.5rem;
     text-align: left;
   }
 
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding-left: 1.5rem;
-    padding-right: 0;
-    text-align: left;
-  }
-
+  /* Punto sobre la línea */
   .timeline-dot {
-    left: 1.6rem;
+    left: 2rem;
+    right: auto;
     transform: translateX(-50%);
   }
 
-  .timeline-content {
-    width: 100%;
-    max-width: none;
-  }
-
-  .timeline-content h3 {
+  .timeline-event h3 {
     font-size: clamp(2rem, 10vw, 3rem);
     line-height: 1.05;
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.6rem;
   }
 
-  .timeline-content p,
-  .timeline-time {
+  .timeline-event p {
     font-size: 1rem;
     letter-spacing: 0.25rem;
     margin: 0;
