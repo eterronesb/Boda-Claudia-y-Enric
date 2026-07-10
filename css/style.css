@@ -525,3 +525,55 @@ footer {
   letter-spacing: 4px;
   font-size: 1rem;
 }
+
+@media (max-width: 768px) {
+  .timeline-vertical {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1.5rem 2rem 3.5rem;
+  }
+
+  .timeline-vertical::before {
+    left: 1.6rem;
+    transform: none;
+  }
+
+  .timeline-item {
+    display: block;
+    width: 100%;
+    min-height: auto;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+    text-align: left;
+  }
+
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 1.5rem;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .timeline-dot {
+    left: 1.6rem;
+    transform: translateX(-50%);
+  }
+
+  .timeline-content {
+    width: 100%;
+    max-width: none;
+  }
+
+  .timeline-content h3 {
+    font-size: clamp(2rem, 10vw, 3rem);
+    line-height: 1.05;
+    margin: 0 0 0.5rem;
+  }
+
+  .timeline-content p,
+  .timeline-time {
+    font-size: 1rem;
+    letter-spacing: 0.25rem;
+    margin: 0;
+  }
+}
